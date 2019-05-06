@@ -1,4 +1,4 @@
-export function template(_props) {
+export function template() {
   return /* jsx */ `
     <div class="modal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
