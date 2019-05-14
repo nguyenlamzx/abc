@@ -1,0 +1,33 @@
+{
+  "name": "universal",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node server/index.js",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "express": "^4.16.4",
+    "prop-types": "^15.7.2",
+    "qs": "^6.7.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.2",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime-corejs2": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "cross-env": "^5.2.0",
+    "react-scripts": "^3.0.1",
+    "webpack": "^4.31.0",
+    "webpack-dev-middleware": "^3.6.2",
+    "webpack-hot-middleware": "^2.24.3"
+  }
+}
