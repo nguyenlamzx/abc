@@ -14,6 +14,8 @@ module.exports = withSize(
         }
         return config
       },
+      cssModules: true,
+      distDir: '../.next',
       pageExtensions: ['jsx', 'js'],
       // generateBuildId: async () => {
       //   // When process.env.YOUR_BUILD_ID is undefined we fall back to the default
