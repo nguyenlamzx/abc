@@ -106,7 +106,7 @@ export default class List extends Component<IList, IListState> {
       );
   }
 
-  handleChangeInputText(event: { target: { value: any; }; }, name: any) {
+  handleChangeInputText(event: React.ChangeEvent, name: any) {
     this.setState({ [name]: event.target.value });
   }
 

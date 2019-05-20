@@ -1,4 +1,5 @@
 
+const path = require('path')
 const withSize = require('next-size')
 const withSass = require('@zeit/next-sass');
 const withTypescript = require("@zeit/next-typescript")
@@ -12,6 +13,7 @@ module.exports = withSize(
         if (options.isServer) {
           config.plugins.push(new ForkTsCheckerWebpackPlugin())
         }
+        config.resolve.modules.push(path.resolve('./src'));
         return config
       },
       cssModules: true,
